@@ -12,7 +12,7 @@ def checkAllowableFilms(age:Int): Unit ={
 
 }
 
-checkAllowableFilms(18)
+checkAllowableFilms(1)
 
 
 
