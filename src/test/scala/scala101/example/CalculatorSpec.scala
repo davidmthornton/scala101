@@ -3,6 +3,7 @@ package scala101.example
 import base.UnitSpec
 
 class CalculatorSpec extends UnitSpec {
+
   "Calling Calculator.add()" when {
 
     "no parameters are specified" should {
