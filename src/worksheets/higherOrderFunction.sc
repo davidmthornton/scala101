@@ -1,11 +1,11 @@
-val possibility:String = "maybe"
-val animal:String = "dog"
-val answer1:Boolean = true
-val sentence:String = "They may take our lives, but " +
-  "they'll never take our freedom!"
-val answer2:Boolean = false
-val number:Long = 4815162342L
+def apply(f: Int => String, v: Int) = f(v)
 
-class Computer(colour:Option[String]){}
+class Decorator(left: String, right: String) {
+  def layout[A](x: A) = left + x.toString() + right
+}
 
-val mac = new Computer(Some("Mac"))
+object FunTest {
+  def apply(f: Int => String, v: Int) = f(v)
+  val decorator = new Decorator("[", "]")
+  println(apply(decorator.layout, 7))
+}
