@@ -10,7 +10,7 @@ val doubledVals = oneToEleven.map{
   _ *  2
 }
 
-val containsY = s.filter{
+val containsLowerCaselY = s.filter{
   !_.contains("y")
 }
 
