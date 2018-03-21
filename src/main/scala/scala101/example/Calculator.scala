@@ -17,7 +17,7 @@ object Calculator {
       case b if b > 50000 => (b * 0.2).toInt
       case c if c > 10000 => (c * 0.15).toInt
       case d if d > 0.1 => (d * 0.1).toInt
-      case _ => 0
+      case e if e <= 0 => (e * 0.1).toInt
 
     }
 
