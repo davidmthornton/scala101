@@ -7,3 +7,5 @@ def nameLength(firstName: String, surname: String): Int ={
 nameLength("Arnold", "Schwarzenegger")
 nameLength("Bruce", "Lee")
 nameLength("Ethan", "Hawke")
+
+
