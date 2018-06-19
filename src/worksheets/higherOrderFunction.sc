@@ -1,11 +1,11 @@
-def apply(f: Int => String, v: Int) = f(v)
-
-class Decorator(left: String, right: String) {
-  def layout[A](x: A) = left + x.toString() + right
+def combine(x:Int, y:Int, z:(Int,Int) => Int) = {
+  z(x,y)
 }
 
-object FunTest {
-  def apply(f: Int => String, v: Int) = f(v)
-  val decorator = new Decorator("[", "]")
-  println(apply(decorator.layout, 7))
-}
+combine(3,2,(a,b)=>a-b)
+
+combine(3,2,(a,b)=>a*b)
+
+combine(3,2,(a,b)=>a max 25)
+
+combine(3,2,(a,b)=>a min b)
